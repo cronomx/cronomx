@@ -14,3 +14,12 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+
+## 📊 Statics
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=cronomx&theme=nord" alt="cronomx" /></a></p>
+
+ # GitHub Stats: <br />
+ ![](https://github-readme-stats.vercel.app/api/top-langs/?username=cronomx&layout=compact&langs_count=8&theme=tokyonight)<br />
+ ![](https://github-readme-stats.vercel.app/api?username=cronomx&show_icons=true&locale=en&theme=tokyonight&hide=stars)<br />
+![](https://github-readme-streak-stats.herokuapp.com/?user=cronomx&theme=tokyonight&hide_border=false)
