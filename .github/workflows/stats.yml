@@ -14,19 +14,18 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Generate Activity Graph SVG
-        uses: ashutosh00710/github-readme-activity-graph@main
+      - name: Generate Profile Summary Cards
+        uses: vn7n24fzkq/github-profile-summary-cards@v2.5.5
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Automatically authorized to see your private counts securely
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: cronomx
-          THEME: tokyonight
-          OUTPUT: ./github-profile-activity-graph.svg
+          THEME: tokyo_night
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git diff-index --quiet HEAD || git commit -m "Update profile activity graph SVG"
+          git diff-index --quiet HEAD || git commit -m "Update profile stats SVG charts"
           git push
