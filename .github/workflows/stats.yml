@@ -1,31 +1,30 @@
-name: Generate GitHub Profile Stats SVG
+name: Actualizar estadísticas del perfil
 
 on:
-  schedule:
-    - cron: '0 */12 * * *' # Automatically updates every 12 hours
-  workflow_dispatch: # Allows you to manually trigger it anytime
+    schedule:
+        - cron: "17 6 * * *"
+    workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    name: generate-stats-svg
+    generate:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+        permissions:
+            contents: write
 
-      - name: Generate Profile Summary Cards
-        uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          USERNAME: cronomx
-          THEME: tokyo_night
+        steps:
+            - name: Descargar repositorio
+              uses: actions/checkout@v4
 
-      - name: Commit and Push Changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git diff-index --quiet HEAD || git commit -m "Update profile stats SVG charts"
-          git push
+            - name: Generar tarjetas
+              uses: vn7n24fzkq/github-profile-summary-cards@release
+              env:
+                    GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+              with:
+                    USERNAME: ${{ github.repository_owner }}
+                    BRANCH_NAME: main
+                    UTC_OFFSET: -6
+                    THEME: github_dark
+                    ANIMATION: load
+                    DURATION: 2
+                    AUTO_PUSH: true
