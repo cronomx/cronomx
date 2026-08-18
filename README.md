@@ -1,25 +1,25 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**cronomx/cronomx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Hola, soy cronomx 👋
 
-Here are some ideas to get you started:
+Developing software, building things and continuously learning.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<br>
 
+<img
+	src="https://raw.githubusercontent.com/cronomx/cronomx/main/profile-summary-card-output/github_dark/0-profile-details.svg"
+	alt="Profile resume"
+/>
 
-## 📊 Statics
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=cronomx&theme=nord" alt="cronomx" /></a></p>
+<br>
 
- # GitHub Stats: <br />
- ![](https://github-readme-stats.vercel.app/api/top-langs/?username=cronomx&layout=compact&langs_count=8&theme=tokyonight)<br />
- ![](https://github-readme-stats.vercel.app/api?username=cronomx&show_icons=true&locale=en&theme=tokyonight&hide=stars)<br />
-![](https://github-readme-streak-stats.herokuapp.com/?user=cronomx&theme=tokyonight&hide_border=false)
+<img
+	src="https://raw.githubusercontent.com/cronomx/cronomx/main/profile-summary-card-output/github_dark/1-repos-per-language.svg"
+	alt="Repository languages"
+/>
+<img
+	src="https://raw.githubusercontent.com/cronomx/cronomx/main/profile-summary-card-output/github_dark/3-stats.svg"
+	alt="GitHub Stats"
+/>
+
+</div>
