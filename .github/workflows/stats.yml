@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate Activity Graph SVG
-        uses: ashutosh00710/github-readme-activity-graph@master
+        uses: ashutosh00710/github-readme-activity-graph@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Automatically authorized to see your private counts securely
         with:
